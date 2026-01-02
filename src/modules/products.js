@@ -47,16 +47,18 @@ export function createProductCard(product) {
     card.dataset.category = product.category;
     card.dataset.id = product.id;
 
-    const imageContent = product.image
-        ? `<img src="${product.image}" alt="${product.name}" loading="lazy">`
-        : `<svg width="160" height="160" viewBox="0 0 160 160" fill="none" style="opacity: 0.3">
-         ${getProductIcon(product.category)}
-       </svg>`;
+    const imageColor = getImageColor(product.category);
+    const categoryIcon = getProductIcon(product.category);
+
+    // Use lazy loading for images
+    const imageHTML = product.image
+        ? `<img src="${product.image}" alt="${product.name}" class="lazy-image" loading="lazy" onerror="this.style.display='none'">`
+        : `<svg width="160" height="160" viewBox="0 0 160 160" fill="none" style="opacity: 0.3">${categoryIcon}</svg>`;
 
     card.innerHTML = `
-    <div class="product-image" style="background: ${getImageColor(product.category)}">
+    <div class="product-image" style="background: ${imageColor}">
       ${product.badge ? `<div class="product-badge">${product.badge}</div>` : ''}
-      ${imageContent}
+      ${imageHTML}
     </div>
     <div class="product-content">
       <div class="product-category">${getCategoryName(product.category)}</div>
@@ -75,13 +77,20 @@ export function createProductCard(product) {
     </div>
   `;
 
-    // Add to cart handler
-    const addBtn = card.querySelector('.add-to-cart');
-    addBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        addToCart(product);
-        showNotification('Product toegevoegd aan winkelwagen!');
-    });
+    // Add to cart functionality
+    const addToCartBtn = card.querySelector('.add-to-cart');
+    if (addToCartBtn) {
+        addToCartBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            addToCart(product);
+
+            // Visual feedback
+            addToCartBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 10L8 13L15 6" stroke="currentColor" stroke-width="2"/></svg>';
+            setTimeout(() => {
+                addToCartBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M1 1H4L6 13H17L19 5H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="17" r="1" fill="currentColor"/><circle cx="15" cy="17" r="1" fill="currentColor"/></svg>';
+            }, 1000);
+        });
+    }
 
     return card;
 }
