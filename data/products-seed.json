@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "name": "DeLuxe Espresso Pro",
+        "category": "espresso",
+        "price": 899,
+        "description": "Professionele espressomachine met 15 bar pomp en dubbele boiler",
+        "image": null,
+        "badge": "Bestseller",
+        "createdAt": "2026-01-02T19:00:00.000Z",
+        "updatedAt": "2026-01-02T19:00:00.000Z"
+    },
+    {
+        "id": 2,
+        "name": "Barista Master X1",
+        "category": "espresso",
+        "price": 1299,
+        "description": "Premium espressomachine met PID temperatuurregeling",
+        "image": null,
+        "badge": "Premium",
+        "createdAt": "2026-01-02T19:00:00.000Z",
+        "updatedAt": "2026-01-02T19:00:00.000Z"
+    },
+    {
+        "id": 3,
+        "name": "FilterMatic Deluxe",
+        "category": "filter",
+        "price": 249,
+        "description": "Programmeerbare filterkoffiemachine met thermoskan",
+        "image": null,
+        "badge": null,
+        "createdAt": "2026-01-02T19:00:00.000Z",
+        "updatedAt": "2026-01-02T19:00:00.000Z"
+    },
+    {
+        "id": 4,
+        "name": "AromaSelect Pro",
+        "category": "filter",
+        "price": 189,
+        "description": "Filtermachine met aroma-selector en timer functie",
+        "image": null,
+        "badge": null,
+        "createdAt": "2026-01-02T19:00:00.000Z",
+        "updatedAt": "2026-01-02T19:00:00.000Z"
+    },
+    {
+        "id": 5,
+        "name": "OneTouch Premium",
+        "category": "automatic",
+        "price": 1599,
+        "description": "Volautomatische koffiemachine met melkopschuimer",
+        "image": null,
+        "badge": "Premium",
+        "createdAt": "2026-01-02T19:00:00.000Z",
+        "updatedAt": "2026-01-02T19:00:00.000Z"
+    },
+    {
+        "id": 6,
+        "name": "AutoBrew Elite",
+        "category": "automatic",
+        "price": 1899,
+        "description": "Complete volautomaat met touch display en app bediening",
+        "image": null,
+        "badge": "Nieuw",
+        "createdAt": "2026-01-02T19:00:00.000Z",
+        "updatedAt": "2026-01-02T19:00:00.000Z"
+    },
+    {
+        "id": 7,
+        "name": "CapsulePro Compact",
+        "category": "capsule",
+        "price": 149,
+        "description": "Compacte capsule machine met 19 bar druk",
+        "image": null,
+        "badge": "Bestseller",
+        "createdAt": "2026-01-02T19:00:00.000Z",
+        "updatedAt": "2026-01-02T19:00:00.000Z"
+    },
+    {
+        "id": 8,
+        "name": "QuickShot Express",
+        "category": "capsule",
+        "price": 199,
+        "description": "Snelle capsule machine met melkopschuimer",
+        "image": null,
+        "badge": null,
+        "createdAt": "2026-01-02T19:00:00.000Z",
+        "updatedAt": "2026-01-02T19:00:00.000Z"
+    },
+    {
+        "id": 9,
+        "name": "Espresso Classic",
+        "category": "espresso",
+        "price": 549,
+        "description": "Klassieke espressomachine met RVS afwerking",
+        "image": null,
+        "badge": null,
+        "createdAt": "2026-01-02T19:00:00.000Z",
+        "updatedAt": "2026-01-02T19:00:00.000Z"
+    },
+    {
+        "id": 10,
+        "name": "BrewMaster 3000",
+        "category": "filter",
+        "price": 299,
+        "description": "Filter koffiemachine met glazen kan en warmhoudplaat",
+        "image": null,
+        "badge": null,
+        "createdAt": "2026-01-02T19:00:00.000Z",
+        "updatedAt": "2026-01-02T19:00:00.000Z"
+    },
+    {
+        "id": 11,
+        "name": "SmartBean Automatic",
+        "category": "automatic",
+        "price": 2199,
+        "description": "Slimme volautomaat met bonen-tot-kop systeem",
+        "image": null,
+        "badge": "Premium",
+        "createdAt": "2026-01-02T19:00:00.000Z",
+        "updatedAt": "2026-01-02T19:00:00.000Z"
+    },
+    {
+        "id": 12,
+        "name": "MiniPress Capsule",
+        "category": "capsule",
+        "price": 99,
+        "description": "Betaalbare capsule machine voor kleine keukens",
+        "image": null,
+        "badge": "Voordeel",
+        "createdAt": "2026-01-02T19:00:00.000Z",
+        "updatedAt": "2026-01-02T19:00:00.000Z"
+    }
+]
